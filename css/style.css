@@ -57,9 +57,6 @@ header{
     
    
     
-
-
-
 /* #endregion-header */
 
 /* #region-aside */
@@ -73,7 +70,7 @@ aside{
 
 .logo{
     width: 168px;
-    padding: 12px 10px;
+    padding: 30px 10px;
 }
 
 /* #endregion-aside */
@@ -87,4 +84,7 @@ footer{
     position: fixed;
     bottom: 0px;
 }
+
+
+
 
