@@ -73,6 +73,10 @@ aside{
     padding: 30px 10px;
 }
 
+.home{
+    color: white;
+    list-style: none;
+}
 /* #endregion-aside */
 
 /* #region-footer */
