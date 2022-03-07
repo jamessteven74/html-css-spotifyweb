@@ -5,11 +5,52 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+}
 
 :root{
     --color_header: #080B12;
+    --color_aside: #000000;
     --color_main: #141922;
     --color_footer: #282828;
     --highlighted_color: #ADFF2F;
     
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* #region-header */
+
+header{
+    width: calc(100% - 200px);
+    height: 100px;
+    background-color: red;
+    float: left;
+}
+
+
+/* #endregion-header */
+
+/* #region-aside */
+
+aside{
+    width: 200px;
+    height: 700px;
+    float: left;
+    background-color: #ADFF2F;
+}
+
+/* #endregion-aside */
+
+/* #region-footer */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--color_footer);
 }
