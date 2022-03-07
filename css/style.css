@@ -1,13 +1,14 @@
-/* #region_common_rule */
+/* #region-commonrule */
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-/* body{
-    height: 100vh;
-} */
+
+body{
+    min-width: 1440px;
+}
 
 :root{
     --color_header: #080B12;
@@ -24,14 +25,39 @@
     clear: both;
 }
 
+/* #endregion-commonrule */
+
+
+
 /* #region-header */
 
 header{
-    width: calc(100% - 200px);
+    width: calc(100% - 220px);
     height: 100px;
     background-color: red;
     float: left;
+    position: relative;
+    background-color: var(--color_header);
 }
+
+.effect{
+    position: absolute;
+    top:0px;
+    right:0px;
+    transform: translate(-11px, 36px);
+}
+.upgrade{
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+   
+    
+   
+    
+
 
 
 /* #endregion-header */
@@ -39,10 +65,15 @@ header{
 /* #region-aside */
 
 aside{
-    width: 200px;
+    width: 220px;
     height: 750px;
     float: left;
-    background-color: #ADFF2F;
+    background-color: var(--color_aside)
+}
+
+.logo{
+    width: 168px;
+    padding: 12px 10px;
 }
 
 /* #endregion-aside */
