@@ -1,0 +1,15 @@
+/* #region_common_rule */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color_header: #080B12;
+    --color_main: #141922;
+    --color_footer: #282828;
+    --highlighted_color: #ADFF2F;
+    
+}
