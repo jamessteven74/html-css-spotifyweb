@@ -27,39 +27,11 @@ body{
     clear: both;
 }
 
+.row{
+    height: calc(100% - 100px);
+}
 /* #endregion-commonrule */
 
-
-
-/* #region-header */
-
-header{
-    width: calc(100% - 220px);
-    height: 100px;
-    background-color: red;
-    float: left;
-    position: relative;
-    background-color: var(--color_header);
-}
-
-.effect{
-    position: absolute;
-    top:0px;
-    right:0px;
-    transform: translate(-11px, 36px);
-}
-.upgrade{
-    border: 2px solid #ffffff;
-    border-radius: 25px;
-    text-decoration: none;
-    padding: 10px 20px;
-    color: #ffffff;
-}
-   
-    
-   
-    
-/* #endregion-header */
 
 /* #region-utility */
 
@@ -91,18 +63,23 @@ header{
     padding: 10px 0px;
     list-style: none;
 }
+
+.flex{
+    display: flex;
+}
 /* #endregion-utility */
 
 /* #region-aside */
 
 aside{
     width: 220px;
-    /* height: 750px; */
-
-    height: 100vh;
+    /* height:calc(100% - 100px); */
     float: left;
-    background-color: var(--color_aside)
+    background-color: var(--color_aside);
+    position: fixed;
 }
+    
+
 
 .logo{
     width: 168px;
@@ -215,50 +192,54 @@ aside{
     margin: ;
 }
 
-    
-
 /* #endregion-aside */
+    
 
-/* #regionnavbar */
-
-.col_left_navbar{
-    width: calc(100% - 220px);
-    height: 40px;
-    background-color: rgb(0, 255, 115);
-    float: left;
-    display: flex;
-    justify-content: center;
-    background-color: var(--color_main);
-}
-
-.list_navbar{
-    display: flex;
-    align-items: flex-end;
-    list-style: none;
-}
-
-.list_navbar li{
-    padding: 0 20px;
-}
-
-
-/* #region-main */
-
+/* #regioncontainer */
 .container{
-    background-color: #ADFF2F;
+    
+    float: left;
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: #141922;
+    width: 100vw;
     margin-left: 220px;
-    width: 100%;
-    /* height: 653px; */
-    height: calc(100vh + 100px);
+    position: fixed;
+
 }
+
+.upgrade{
+    width: 100vw;
+    height: 79px;
+    background-color: var(--color_header);
+    position: relative;
+}
+
+.border_title{
+    position: absolute;
+    top: 21px;
+    right: 248px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.title{
+    padding: 8px 29px;
+}
+
+.choice{
+    float: left;
+    padding: 0px 15px;
+    list-style: none;
     
-    
-    
+}
 
-
-
-
+.menu{
+    margin-left:310px;
+}
 /* #region-footer */
+
 
 footer{
     width: 100%;
@@ -270,6 +251,24 @@ footer{
 
 
 /* #endregion-footer */
+   
+    
+   
+    
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
 
 
 
