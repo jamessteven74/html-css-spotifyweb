@@ -30,6 +30,11 @@ body{
 .row{
     height: calc(100% - 100px);
 }
+a[href]{
+    text-decoration: none;
+    color: var(--color_font);
+}
+
 /* #endregion-commonrule */
 
 
@@ -195,7 +200,7 @@ aside{
 /* #endregion-aside */
     
 
-/* #regioncontainer */
+/* #region-container */
 .container{
     
     float: left;
@@ -230,14 +235,40 @@ aside{
 
 .choice{
     float: left;
-    padding: 0px 15px;
+    padding: 3px 10px;
     list-style: none;
     
 }
+.floatnone{
+    float: none;
+    padding-left: 10px;
+}
 
+.loose{
+    padding-left: 10px;
+}
 .menu{
     margin-left:310px;
 }
+
+/* #albums */
+
+.recently{
+    max-width: 1250px;
+}
+.firstalbums, .secondalbums, .johndoe{
+    margin-left: 30px;
+}
+.small{
+    width: 200px;
+    height: 200px;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+/* #endregion-container */
+
 /* #region-footer */
 
 
