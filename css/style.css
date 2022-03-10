@@ -54,12 +54,12 @@ img:hover{
     top: 50px;
     left: 50px;
     transform: translate(286%, 214%);
-    display: none;
+    visibility: hidden;
 }
 
-/* .card:hover .disappears{
- display: block;
-} */
+.small:hover .disappears{
+ visibility: visible;
+}
 
 /* #endregion-commonrule */
 
@@ -246,6 +246,7 @@ aside{
     height: 79px;
     background-color: var(--color_header);
     position: relative;
+    position: fixed;
     
 }
 
@@ -409,6 +410,7 @@ footer{
     justify-content: space-evenly;
     margin-top: 31px;
     color: white;
+    position: relative;
 }
 
 .iconvideo{
@@ -421,11 +423,18 @@ footer{
     margin-right: 143px;
 }
 
-/* .border{
-    width: 100px;
-    background-color: darkviolet;
-    height: 5px;
-} */
+.progress{
+    position: absolute;
+    top: 31px;
+    width: 632px;
+    right: 135px;
+}
+.progress2{
+    position: absolute;
+    bottom: 54px;
+    left: 1362px;
+    width: 126px;
+}
 
 /* #endregion-footer */
 
@@ -479,13 +488,26 @@ footer{
         padding: 0px 9px;
     }
     .iconvideo{
-        margin-top: 62px;
-        margin-left: 35px;
-        color: white;
-        display: flex;
-        margin-right: 30px;
-        flex-direction: row;
-        justify-content: space-between;
+    margin-top: 62px;
+    margin-left: -15px;
+    color: white;
+    display: flex;
+    margin-right: 123px;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    .progress{
+    position: absolute;
+    top: 31px;
+    width: 337px;
+    }
+
+    .progress2{
+    position: absolute;
+    bottom: 20px;
+    left: 652px;
+    width: 114px;
+}
     }
 }
 
