@@ -435,6 +435,9 @@ footer{
     left: 1362px;
     width: 126px;
 }
+.heart i{
+    padding: 0px 5px;
+}
 
 /* #endregion-footer */
 
@@ -451,8 +454,9 @@ footer{
         margin-left: 0px;
         
     }
-    aside{
+    .aside{
         width: 174px;
+        overflow-x: hidden;
     }
     .container{
         margin-left: 174px;
@@ -514,13 +518,15 @@ footer{
         position: static;
     }
 
+    
+
 
 
 /* #endregion-mediatablet */
 
 
 
-/* #regionmediamax-wdth-576px */
+/* #region-mediamax-wdth-576px */
 
 @media screen and (max-width: 576px){
     .container{
@@ -531,8 +537,79 @@ footer{
     
     margin-right: 146px;
     }
+
+    .mood{
+        margin-top: 17px;
+    }
+    .loose{
+        padding-left: 0px;
+    }
+    .description{
+        margin-left: -24px;
+    }
+
+    .sub{
+        margin-top: 20px;
+        margin-left: -44px;
+        text-align: center;
+    }
+
+    .cure, .sinister{
+        margin-top: 25px;
+    }
+
+    .progress{
+    width: 153px;
+    position: absolute;
+    top: 47px;
+    width: 153px;
+    right: 58px;
+        
+    }
+
+    .progress2{
+    position: absolute;
+    bottom: 18px;
+    left: 475px;
+    width: 91px;
+    }
+    .iconvideo i{
+        padding: 0px 10px;
+    }
+
+    .col2{
+        margin-left: 36px;
+    }
+    .col3{
+        width: 203px;
+    }
 }
 
+/* #endregion-mediamax-width-576px */
+
+
+/* #region-mediamin-width-320px */
+
+@media (min-width: 320px) and (max-width: 575px){
+    .first_list_left, .play, .fa-plus-square:before, .fa-square-plus:before,
+    .created_playlist, .name_playlist, .link{
+        display: none;
+    }
+    aside{
+        width: 60px;
+    }
+    .container{
+        margin-left: 59px;
+    }
+    .border_title{
+    position: absolute;
+    top: 21px;
+    right: 61px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    }
+}
 
 
     
