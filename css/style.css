@@ -54,12 +54,12 @@ img:hover{
     top: 50px;
     left: 50px;
     transform: translate(286%, 214%);
-    visibility: hidden;
+    display: none;
 }
 
-.small:hover .disappears{
- visibility: visible;
-}
+/* .card:hover .disappears{
+ display: block;
+} */
 
 /* #endregion-commonrule */
 
@@ -246,7 +246,7 @@ aside{
     height: 79px;
     background-color: var(--color_header);
     position: relative;
-    position: fixed;
+    /* position: fixed; */
     
 }
 
@@ -441,8 +441,7 @@ footer{
 
 
 
-
-
+/* #region-mediatablet */
 
 
 /* #tablet */
@@ -500,6 +499,7 @@ footer{
     position: absolute;
     top: 31px;
     width: 337px;
+    right: 58px;
     }
 
     .progress2{
@@ -509,7 +509,30 @@ footer{
     width: 114px;
 }
     }
+
+    .upgrade{
+        position: static;
+    }
+
+
+
+/* #endregion-mediatablet */
+
+
+
+/* #regionmediamax-wdth-576px */
+
+@media screen and (max-width: 576px){
+    .container{
+        max-width: 576px;
+    }
+    .listchoice{
+    margin-top: 10px;
+    
+    margin-right: 146px;
+    }
 }
+
 
 
     
