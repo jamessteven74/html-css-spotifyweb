@@ -49,17 +49,10 @@ img:hover{
     
 
 
-.disappears{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    transform: translate(286%, 214%);
-    display: none;
-}
 
-/* .card:hover .disappears{
- display: block;
-} */
+
+
+
 
 /* #endregion-commonrule */
 
@@ -439,6 +432,18 @@ footer{
     padding: 0px 5px;
 }
 
+.timing1{
+    position: relative;
+    top: 25px;
+    right: 522px;
+}
+
+.timing2{
+    position: relative;
+    top: 25px;
+    right: 11px;
+}
+
 /* #endregion-footer */
 
 
@@ -519,6 +524,10 @@ footer{
         position: static;
     }
 
+    .timing1, .timing2{
+        display: none;
+    }
+
     
 
 
@@ -584,6 +593,10 @@ footer{
     .col3{
         width: 203px;
     }
+
+     .timing1, .timing2{
+        display: none;
+    }
 }
 
 /* #endregion-mediamax-width-576px */
@@ -627,6 +640,7 @@ footer{
     
 }
 
+/* #endregion-mediamin-width-320px */
 
     
 
