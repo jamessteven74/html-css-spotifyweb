@@ -457,6 +457,7 @@ footer{
     .aside{
         width: 174px;
         overflow-x: hidden;
+        position: fixed;
     }
     .container{
         margin-left: 174px;
@@ -609,6 +610,21 @@ footer{
     border: 1px solid white;
     border-radius: 20px;
     }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .col3{
+        display: none;
+    }
+    .progress{
+    width: 153px;
+    position: absolute;
+    top: 35px;
+    width: 153px;
+    right: 28px;
+    }
+    
 }
 
 
