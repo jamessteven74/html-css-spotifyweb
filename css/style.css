@@ -231,7 +231,7 @@ aside{
     width: 100vw;
     margin-left: 220px;
     position: fixed;
-    overflow:auto;
+    overflow-x: hidden;
 
 }
 
