@@ -28,12 +28,12 @@ body{
     clear: both;
 }
 
-.row{
+/* .row{
     height: calc(100% - 100px);
-}
+} */
 a[href]{
     text-decoration: none;
-    color: var(--color_font);
+    color: white;
 }
 
 a:hover{
@@ -45,11 +45,15 @@ img:hover{
    
 }
    
-   
+a[class^="interaction"]{
+    padding: 0% 6%;
+    font-size: 20px;
+}
+
+a[class^="video"]{
+    padding: 0px 5px;
+}
     
-
-
-
 
 
 
@@ -285,6 +289,25 @@ aside{
 
 /* #albums */
 
+.zindex{
+    position: absolute;
+    top: 42px;
+    left: 55px;
+    visibility: hidden;
+    width: 200px;
+    font-size: 98px;
+    
+}
+
+.fa-play-circle-o{
+    font-size: 98px;
+}
+
+.card:hover .zindex{
+    visibility: visible;
+    
+}
+
 .card{
     display: inline-block;
     width: 200px;
@@ -370,85 +393,145 @@ footer{
     position: fixed;
     bottom: 0px;
 }
-    
+
+/* #region-col1 */
+
 .col1{
     /* background-color: red; */
-    width: calc(100% - 70%);
+    width: calc(100% - 80%);
     height: 100px;
+    float: left;
 }
 
-.col2{
-    width: calc(100% - 30%);
-    height: 100px;
-    /* background-color: #ADFF2F; */
-}
-
-.col3{
-    width: calc(100% - 70%);
-    height: 100px;
-    /* background-color: darksalmon; */
+.container_subject{
+    float: left;
+    width: 73%;
 }
 
 .smallscreen{
     width: 25%;
+    margin-left: 7px;
+    margin-top: 14px;
+    float: left;
 }
 
-.container_column .d-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.namemovie{
+    margin-top: 25px;
+    padding-bottom: 3px;
     color: white;
 }
 
-.icons2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 31px;
+.namemovie, .indication{
+    margin-left: 70px;
+}
+
+.indication{
+    color: var(--color_font);
+}
+
+
+.heart{
+    float: left;
+    margin-top: 34px;
+}
+
+.fa-heart{
+    margin: 0px 10px;
+}
+
+/* #endregion-col1 */
+
+/* #region-col2 */
+
+.col2{
+    
+    width: calc(100% - 40%);
+    /* background-color: #ADFF2F; */
+    height: 100px;
+    float: left;
+}
+
+.timer{
+    width: 50%;
+    height: 5px;
+    margin: auto;
+    margin-top: 2%;
+    background-color: var(--color_font);
+    border-radius: 2px 2px;
+}
+
+.cursor_time{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px 2px;
+}
+
+.timing_start{
+    width: 5%;
+    margin:  -1% 20%;
     color: white;
-    position: relative;
+}
+
+.timing_end{
+    width: 5%;
+    margin: -13px 700px;
+    color: white;
+}
+
+.icons_player{
+    width: calc(100% - 70%);
+    margin: auto;
+    margin-top: 3%;
+}
+/* #endregion-col2 */
+
+/* #region-col-3 */
+
+.col3{
+    width: calc(100% - 80%);
+    height: 100px;
+    /* background-color: darksalmon; */
+    float: left;
+}
+
+.volume{
+    width: calc(100% - 65%);
+    height: 5px;
+    background-color: var(--color_font);
+    border-radius: 2px 2px;
+    margin-top: 6%;
+    margin-left: 36%;
+    margin-top: 49px;
+
+}
+
+.cursor_volume{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px 2px;
+    float: left;
+    
 }
 
 .iconvideo{
-    margin-top: 31px;
-    margin-left: 35px;
+    margin-top: 41px;
     color: white;
-    display: flex;
-   
-    justify-content: space-evenly;
-    margin-right: 143px;
+    float: left;
 }
 
-.progress{
-    position: absolute;
-    top: 31px;
-    width: 632px;
-    right: 135px;
-}
-.progress2{
-    position: absolute;
-    bottom: 54px;
-    left: 1362px;
-    width: 126px;
-}
-.heart i{
-    padding: 0px 5px;
-}
 
-.timing1{
-    position: relative;
-    top: 25px;
-    right: 522px;
-}
+/* #endregion-col-3 */
 
-.timing2{
-    position: relative;
-    top: 25px;
-    right: 11px;
-}
+
+
+
+
 
 /* #endregion-footer */
+
+
 
 
 
@@ -509,7 +592,13 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     }
-    .progress{
+
+    .iconlike{
+       
+    }
+
+
+    /* .progress{
     position: absolute;
     top: 31px;
     width: 337px;
@@ -521,8 +610,8 @@ footer{
     bottom: 20px;
     left: 652px;
     width: 114px;
-}
-    }
+} */
+
 
     .upgrade{
         position: static;
@@ -647,24 +736,25 @@ footer{
 /* #endregion-mediamin-width-320px */
 
 
-.zindex{
-    position: absolute;
-    top: 42px;
-    left: 55px;
-    visibility: hidden;
-    width: 200px;
-    font-size: 98px;
-    
-}
 
-.fa-play-circle-o{
-    font-size: 98px;
-}
 
-.card:hover .zindex{
-    visibility: visible;
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     
