@@ -199,6 +199,7 @@ aside{
     margin: 21px 13px;
     border-radius: 50%;
     position: relative;
+    padding: 10px;
     
 }
 .profile{
@@ -251,10 +252,11 @@ aside{
     color: white;
     border: 1px solid white;
     border-radius: 20px;
+    padding: 10px 10px;
 }
 
 .title{
-    padding: 8px 29px;
+    padding: 7px 13px;
 }
 
 
